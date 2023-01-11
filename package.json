@@ -1,0 +1,14 @@
+{
+  "name": "my_quote_app_simple_html",
+  "version": "1.0.0",
+  "description": "Webapp to read/write a quote on the goerli test network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.8.1"
+  }
+}

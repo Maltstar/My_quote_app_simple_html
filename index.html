@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einfact Frontend Dapp</title>
+    <link rel="stylesheet" href="static/css/globals.css">
+    <meta name="description" content="A simple web app to read and write quote on the blockchain mainnet Goerli Test network.">
+    <!-- <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script> -->
+    
+
+</head>
+<body>
+    <h1>Quote App</h1>
+    </br> <br><br><br><br>
+    <h2>Enter your quote</h2>
+    <br> <br>
+    <br> 
+    <form id="quotesform">
+        <!-- <label> your quote</label> <br>  -->
+        <input id="quote_input" type="text" placeholder="type your quote"/> <br> 
+        <input id="submit_write" type="submit" value="Write on Blockchain"/>
+        <input class="submit_read" type="submit" value="Read current quote on Blockchain"/>
+        <input class="submit_read" type="submit" value="Read current quote on Blockchain"/>
+        <p id="read_out">"quote read on the blockchain"</p>
+        <p id="owner">"quote author"</p>
+        <p id="quote_length">"quote length"</p>
+    </form>
+    <button id="connect">Connect MetaMask</button>
+        <!-- <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script> -->
+    <script type="module" src="src/js/app_client.js"></script>
+</body>
+</html>
