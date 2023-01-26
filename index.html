@@ -3,33 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta http-equiv="X-UA-Compatible"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Einfact Frontend Dapp</title>
+    <title>Simple Frontend Dapp</title>
     <link rel="stylesheet" href="static/css/globals.css">
     <meta name="description" content="A simple web app to read and write quote on the blockchain mainnet Goerli Test network.">
-    <!-- <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script> -->
     
 
 </head>
 <body>
-    <h1>Quote App</h1>
-    </br> <br><br><br><br>
-    <h2>Enter your quote</h2>
-    <br> <br>
-    <br> 
-    <form id="quotesform">
-        <!-- <label> your quote</label> <br>  -->
-        <input id="quote_input" type="text" placeholder="type your quote"/> <br> 
-        <input id="submit_write" type="submit" value="Write on Blockchain"/>
-        <input class="submit_read" type="submit" value="Read current quote on Blockchain"/>
-        <input class="submit_read" type="submit" value="Read current quote on Blockchain"/>
-        <p id="read_out">"quote read on the blockchain"</p>
-        <p id="owner">"quote author"</p>
-        <p id="quote_length">"quote length"</p>
-    </form>
-    <button id="connect">Connect MetaMask</button>
-        <!-- <script type="text/javascript" src="node_modules/web3/dist/web3.min.js"></script> -->
+    <section id="main wrapper">
+        <header>
+            <div id="up">
+                <h1>Quote App</h1>
+                <button id="connect" alt="Button to connect on MetaMask Wallet"><img src="/img/metamask.png" alt="Metamask Wallet"  width="90" height="90"/> </button>
+            </div>
+            <section id="menu">
+                <nav id="nav">
+                    <ul class="list_instructions" id="navigation_menu">
+                        <li class="navipunkt" id="dabinich"> 
+                            <a href="#" class="link">Home</a>
+                        </li>
+                        <li class=navipunkt>
+                            <a href="/about.html" class="link">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>  
+                <h2>Read or write your quote on blockchain (Goerli test network)</h2>
+                <br>
+            
+         </header>
+        <article id="instructions">
+            <p>How to use:
+            <ul class="list_instructions">
+                <li>  1- Connect to <a href="https://metamask.io/download/">Metamask</a> on <a href="https://www.tech-zone.co.uk/Guides/how-to-add-goerli-network-to-metamask">Goerli test network</a> (either use the button at the corner above left or reload the page)</li>
+                <li>  2- Read or write a quote by clicking on the associated button and filling the form when required  </li>
+                <li>  <strong>Note:</strong> the writing of a quote costs a fee to compute and store your quote on the blockchain network, make sure to have some <a href="https://goerlifaucet.org/">Goerli</a><a href="https://goerli-faucet.pk910.de/">ETH</a> before writing </li>
+                <li>  <strong>In case of writing a quote :</strong> after paying the transaction, wait for the transaction confirmation (MetaMask Popup "Confirmed transaction") for the availability of your quote on the blockchain </li>         
+            </ul>
+            </p>
+        </article>
+        <br>
+
+        <article id="user_interface">
+            
+            
+            <br> 
+            <br> 
+            <form id="quotesform">
+                <div id="current_quote">
+                    <input id="read_current" class="submit_read" type="submit" value="Read current quote on Blockchain"/>
+                    <div id="result_read_current"class="result"></div>
+                </div>
+                <div id="all_quotes">
+                    <input id="read_all_quotes" class="submit_read" type="submit" value="Read all quotes"/>
+                    <div id="result_all_quotes"class="result"></div>
+                </div>
+                <div id="all_authors">
+                    <input id="read_all_authors" class="submit_read" type="submit" value="List all authors"/>
+                    <div id="result_all_authors"class="result"></div>
+                </div>
+                <div id="write">
+                    <textarea rows="4" cols="60" id="quote_input" name="user_quote"> </textarea>
+                    <input id="submit_write" alt="button to submit the quote" type="submit" value="Write quote on Blockchain"/>
+                </div>
+                <div id="quote_by_author">
+                    <input id="author_input" type="text" alt="text field to enter the author" placeholder="type the address of an author"/>
+                    <input id="read_quotes_from_author" class="submit_read" alt="button to submit the author" type="submit" value="Read quotes from author"/>
+                    <div id="result_quote_by_author" class="result" alt="quotes of the author with timestamps"></div>
+                </div>
+
+            </form>           
+            
+        </article>
+        
+
+        
+
+    </section> <!-- <end main wrapper -->
+
     <script type="module" src="src/js/app_client.js"></script>
 </body>
 </html>
