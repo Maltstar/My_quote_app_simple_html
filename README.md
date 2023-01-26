@@ -48,6 +48,10 @@ Open [http://localhost:8080](http://localhost:8080) with your browser to see the
    - Programing a frontend to display the quotes.
 
 
+Live demo available at https://maltstar.github.io/My_quote_app_simple_html/index.html
+
 Tested on Firefox and Chromium.
+
+
 
 
