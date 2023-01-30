@@ -1,4 +1,4 @@
-import "/npm_modules/web3/dist/web3.min.js";
+import "npm_modules/web3/dist/web3.min.js";
 // checkweb provider
 
 function main()
