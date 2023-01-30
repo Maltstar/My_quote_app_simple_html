@@ -29,7 +29,8 @@ Open [http://localhost:8080](http://localhost:8080) with your browser to see the
 
 ### What?
  Save relevant information, quote, thoughts and thinking in form of a text.
- 
+
+
  
 ### Why?
 
@@ -47,8 +48,18 @@ Open [http://localhost:8080](http://localhost:8080) with your browser to see the
    - Programing a backend to interact with the smart contract and retrieve quotes.
    - Programing a frontend to display the quotes.
 
+### Screenshots
+![Home page](about_pics.md/home.png)
 
-Live demo available at https://maltstar.github.io/My_quote_app_simple_html/index.html
+
+![requesting current quote](about_pics.md/current_quote.png)
+
+
+![requesting all a list of all authors](about_pics.md/list_authors.png)
+
+
+![reading all quotes from an author](about_pics.md/read_from_author.png)
+
 
 Tested on Firefox and Chromium.
 
